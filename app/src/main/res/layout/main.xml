@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paradise.dombrovskaya_hw02.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ButtonBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/ButtonDialer"
+            style="@style/ButtonsBottom"
+            android:src="@android:drawable/ic_menu_call" />
+
+        <Button
+            android:id="@+id/ButtonApp"
+            style="@style/ButtonsBottom"
+            android:text="app" />
+
+        <ImageButton
+            android:id="@+id/ButtonMessage"
+            style="@style/ButtonsBottom"
+            android:src="@android:drawable/ic_dialog_email" />
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ButtonBottom"
+        android:background="@color/gray"
+        app:columnCount="3"
+        app:rowCount="4">
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+        <Button
+            style="@style/GridButtons"
+            android:text="@string/buttonText" />
+
+
+    </android.support.v7.widget.GridLayout>
+</RelativeLayout>
