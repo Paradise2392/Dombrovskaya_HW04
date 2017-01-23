@@ -30,6 +30,7 @@
     </LinearLayout>
 
     <android.support.v7.widget.GridLayout
+        android:id="@+id/gl_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/ButtonBottom"
@@ -37,53 +38,6 @@
         app:columnCount="3"
         app:rowCount="4">
 
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
-
-        <Button
-            style="@style/GridButtons"
-            android:text="@string/buttonText" />
 
 
     </android.support.v7.widget.GridLayout>
