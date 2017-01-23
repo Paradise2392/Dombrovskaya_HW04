@@ -1,6 +1,5 @@
-package com.example.paradise.dombrovskaya_hw02;
+package com.example.paradise.dombrovskaya_hw02.ui;
 
-import android.app.Application;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.paradise.dombrovskaya_hw02.model.ApplicationPlacer;
+import com.example.paradise.dombrovskaya_hw02.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                         mes.setData(Uri.parse("sms:"));
                         startActivity(mes);
                     case R.id.ButtonApp:
-                        Intent app = new Intent(MainActivity.this,SecondActivity.class);
+                        Intent app = new Intent(MainActivity.this,AppActivity.class);
                         startActivity(app);
                 }
             }

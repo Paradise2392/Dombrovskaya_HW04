@@ -1,4 +1,4 @@
-package com.example.paradise.dombrovskaya_hw02;
+package com.example.paradise.dombrovskaya_hw02.model;
 
 import android.content.ClipData;
 import android.view.DragEvent;

@@ -1,9 +1,8 @@
-package com.example.paradise.dombrovskaya_hw02;
+package com.example.paradise.dombrovskaya_hw02.ui;
 
 import android.app.ProgressDialog;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,15 +16,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Filter;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.example.paradise.dombrovskaya_hw02.R;
+import com.example.paradise.dombrovskaya_hw02.adapter.ViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
+public class AppActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button buttonGrid;
     Button buttonList;
@@ -127,11 +124,11 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         protected void onPostExecute(Void result) {
             progress.dismiss();
 
-            adapter = new ViewAdapter(SecondActivity.this, appList);
+            adapter = new ViewAdapter(AppActivity.this, appList);
             filter = adapter.getFilter();
             recyclerView.setAdapter(adapter);
 
-            layoutManager = new LinearLayoutManager(SecondActivity.this);
+            layoutManager = new LinearLayoutManager(AppActivity.this);
             recyclerView.setLayoutManager(layoutManager);
             adapter.setLayoutFormat(R.layout.item_list);
 
@@ -140,7 +137,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
         @Override
         protected void onPreExecute() {
-            progress = ProgressDialog.show(SecondActivity.this, null, "Info");
+            progress = ProgressDialog.show(AppActivity.this, null, "Info");
             super.onPreExecute();
         }
     }

@@ -1,9 +1,6 @@
-package com.example.paradise.dombrovskaya_hw02;
+package com.example.paradise.dombrovskaya_hw02.adapter;
 
-import android.app.Activity;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -16,7 +13,8 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.paradise.dombrovskaya_hw02.R;
 
 import java.util.ArrayList;
 import java.util.List;

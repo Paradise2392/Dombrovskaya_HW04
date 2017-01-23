@@ -1,4 +1,4 @@
-package com.example.paradise.dombrovskaya_hw02;
+package com.example.paradise.dombrovskaya_hw02.interfaces;
 
 /**
  * Created by Paradise on 21.01.2017.
